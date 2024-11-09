@@ -1,0 +1,191 @@
+<form [formGroup]="healthForm" (ngSubmit)="onSubmit()">
+  <!-- Age Input -->
+  <div class="flex-container">
+    <div>
+      <label for="age">Age:</label>
+      <input id="age" type="number" formControlName="age" />
+    </div>
+
+    <!-- Sex Radio Input -->
+    <div>
+      <label>Sex:</label>
+      <label>
+        <input type="radio" formControlName="sex" [value]="1" /> Male
+      </label>
+      <label>
+        <input type="radio" formControlName="sex" [value]="0" /> Female
+      </label>
+    </div>
+
+    <!-- High Cholesterol Radio Input -->
+    <div>
+      <label>High Cholesterol:</label>
+      <label>
+        <input type="radio" formControlName="highChol" [value]="1" /> Yes
+      </label>
+      <label>
+        <input type="radio" formControlName="highChol" [value]="0" /> No
+      </label>
+    </div>
+
+    <!-- Cholesterol Check Radio Input -->
+    <div>
+      <label>Cholesterol Check:</label>
+      <label>
+        <input type="radio" formControlName="cholCheck" [value]="1" /> Yes
+      </label>
+      <label>
+        <input type="radio" formControlName="cholCheck" [value]="0" /> No
+      </label>
+    </div>
+
+    <!-- BMI Input -->
+    <div>
+      <label for="bmi">BMI:</label>
+      <input id="bmi" type="number" formControlName="bmi" />
+    </div>
+
+    <!-- Smoker Radio Input -->
+    <div>
+      <label>Smoker:</label>
+      <label>
+        <input type="radio" formControlName="smoker" [value]="1" /> Yes
+      </label>
+      <label>
+        <input type="radio" formControlName="smoker" [value]="0" /> No
+      </label>
+    </div>
+
+    <!-- Physical Activity Radio Input -->
+    <div>
+      <label>Physical Activity:</label>
+      <label>
+        <input type="radio" formControlName="physActivity" [value]="1" /> Yes
+      </label>
+      <label>
+        <input type="radio" formControlName="physActivity" [value]="0" /> No
+      </label>
+    </div>
+
+    <!-- Fruits Intake Radio Input -->
+    <div>
+      <label>Fruits Intake:</label>
+      <label>
+        <input type="radio" formControlName="fruits" [value]="1" /> Yes
+      </label>
+      <label>
+        <input type="radio" formControlName="fruits" [value]="0" /> No
+      </label>
+    </div>
+
+    <!-- Veggies Intake Radio Input -->
+    <div>
+      <label>Veggies Intake:</label>
+      <label>
+        <input type="radio" formControlName="veggies" [value]="1" /> Yes
+      </label>
+      <label>
+        <input type="radio" formControlName="veggies" [value]="0" /> No
+      </label>
+    </div>
+
+    <!-- Heavy Alcohol Consumption Radio Input -->
+    <div>
+      <label>Heavy Alcohol Consumption:</label>
+      <label>
+        <input type="radio" formControlName="hvyAlcoholConsump" [value]="1" />
+        Yes
+      </label>
+      <label>
+        <input type="radio" formControlName="hvyAlcoholConsump" [value]="0" />
+        No
+      </label>
+    </div>
+
+    <!-- General Health Select Input -->
+    <div>
+      <label for="genHlth">General Health:</label>
+      <select id="genHlth" formControlName="genHlth">
+        <option [value]="1">Excellent</option>
+        <option [value]="2">Very Good</option>
+        <option [value]="3">Good</option>
+        <option [value]="4">Fair</option>
+        <option [value]="5">Poor</option>
+      </select>
+    </div>
+
+    <!-- Mental Health Input -->
+    <div>
+      <label for="mentHlth"
+        >Mental Health (Days with poor mental health):</label
+      >
+      <input id="mentHlth" type="number" formControlName="mentHlth" />
+    </div>
+
+    <!-- Physical Health Input -->
+    <div>
+      <label for="physHlth"
+        >Physical Health (Days with poor physical health):</label
+      >
+      <input id="physHlth" type="number" formControlName="physHlth" />
+    </div>
+
+    <!-- Difficulty Walking Radio Input -->
+    <div>
+      <label>Difficulty Walking:</label>
+      <label>
+        <input type="radio" formControlName="diffWalk" [value]="1" /> Yes
+      </label>
+      <label>
+        <input type="radio" formControlName="diffWalk" [value]="0" /> No
+      </label>
+    </div>
+
+    <!-- Stroke Radio Input -->
+    <div>
+      <label>Stroke:</label>
+      <label>
+        <input type="radio" formControlName="stroke" [value]="1" /> Yes
+      </label>
+      <label>
+        <input type="radio" formControlName="stroke" [value]="0" /> No
+      </label>
+    </div>
+
+    <!-- High Blood Pressure Radio Input -->
+    <div>
+      <label>High Blood Pressure:</label>
+      <label>
+        <input type="radio" formControlName="highBP" [value]="1" /> Yes
+      </label>
+      <label>
+        <input type="radio" formControlName="highBP" [value]="0" /> No
+      </label>
+    </div>
+
+    <div>
+      <label>History of Heart Disease?</label>
+      <label>
+        <input
+          type="radio"
+          formControlName="heartDiseaseOrAttack"
+          [value]="1"
+        />
+        Yes
+      </label>
+      <label>
+        <input
+          type="radio"
+          formControlName="heartDiseaseOrAttack"
+          [value]="0"
+        />
+        No
+      </label>
+    </div>
+  </div>
+
+  <!-- Submit Button -->
+  <div>
+    <button type="submit">Submit</button>
+  </div>
+</form>
